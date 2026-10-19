@@ -1,8 +1,8 @@
 class Fomo < Formula
   desc "Cornwall's wave buoys and forecast in the macOS menu bar"
   homepage "https://github.com/gregrmunday/fomo"
-  url "https://github.com/gregrmunday/fomo/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "f5c25dcb80cf399671faf71a9566e5b112c863fd3ef0b738fd4aac3e416674d1"
+  url "https://github.com/gregrmunday/fomo/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "ea027e36aaebb5bf082ea79a54bf69f84a3b83047c2538dfaaf56a6a56ab0f06"
   license "MIT"
   head "https://github.com/gregrmunday/fomo.git", branch: "main"
 
