@@ -6,6 +6,11 @@ class Fomo < Formula
   license "MIT"
   head "https://github.com/gregrmunday/fomo.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/gregrmunday/homebrew-tap/releases/download/fomo-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ef472dd8fad6e743ef3ff85ebd9f9a284ec7eb80c932340a88aa4c153cb7b83e"
+  end
+
   depends_on "rust" => :build
   depends_on macos: :monterey
 
