@@ -27,10 +27,7 @@ class Fomo < Formula
 
   def caveats
     <<~EOS
-      Start Fomo now and at every login:
-        brew services start fomo
-
-      Or open it once:
+      Fomo lives in the menu bar. To open it once without starting it at login:
         open #{opt_prefix}/Fomo.app
     EOS
   end

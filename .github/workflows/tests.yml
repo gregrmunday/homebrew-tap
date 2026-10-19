@@ -17,9 +17,10 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        # Fomo is macOS-only. A bottle also serves newer macOS versions, so building
-        # on the oldest current runners covers Sequoia and later on both architectures.
-        os: [ macos-15, macos-15-intel ]
+        # Fomo is macOS-only, and a bottle also serves newer macOS versions, so one
+        # build on macOS 15 covers Apple Silicon Macs from Sequoia on. There is no
+        # Intel build: Homebrew no longer bottles Rust for Intel, so test-bot skips it.
+        os: [ macos-15 ]
     runs-on: ${{ matrix.os }}
     permissions:
       actions: read

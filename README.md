@@ -9,7 +9,9 @@ brew services start fomo
 | --- | --- |
 | [`fomo`](https://github.com/gregrmunday/fomo) | Cornwall's wave buoys and forecast in the macOS menu bar |
 
-Fomo is built from source on your Mac, so it needs no Apple signing and shows no "unidentified developer" warning. The first install also installs Homebrew's Rust to build it; run `brew autoremove` afterwards to remove that again.
+On Apple Silicon Macs running macOS 15 or later, Homebrew installs a ready-made build (a "bottle") in seconds. It needs no Apple signing and shows no "unidentified developer" warning.
+
+Other Macs build Fomo from source. On Apple Silicon with an older macOS, that downloads about 2.5 GB of Homebrew's Rust and LLVM and takes a few minutes; `brew autoremove` removes them again afterwards. Intel Macs aren't supported, because Homebrew no longer provides Rust for Intel and building it takes hours.
 
 ## Releasing a new Fomo version
 
